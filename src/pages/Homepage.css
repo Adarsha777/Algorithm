@@ -1,0 +1,90 @@
+body {
+  background-color: #6dbebe;
+  margin: 0; 
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+.homepage-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.hero-text {
+  margin: 20px 0;
+  flex: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-text p {
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.hero-text p span {
+  color: var(--primary-color);
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: normal;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.startbtn {
+  color: white;
+  background-color: #005f60;
+  border: none;
+  height: 45px;
+  width: 200px;
+  border-radius: 23px;
+  font-size: 17px;
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px;
+}
+.btns a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #005f60;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0; 
+  right: 0; 
+  width: 100%;
+  margin: 0; 
+  padding-left: 0;
+  padding-right: 0; 
+}
+footer .text-color {
+  color: #ffa500; 
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
