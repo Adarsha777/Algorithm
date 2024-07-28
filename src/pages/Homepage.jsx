@@ -1,9 +1,11 @@
+import Navbar from "../Component/Navbar/Navbar";
 import "./Homepage.css"
 
 export const Home = () => {
   return (
     <div className="homepage-container">
       <div>
+        <Navbar />
         <div className="hero-text">
           <p>
             <span> Navigate </span>the <span> Algorithm </span> and <br />
