@@ -1,5 +1,6 @@
+import "./Homepage.css";
 import Navbar from "../../Component/Navbar/Navbar";
-import "./Homepage.css"
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -13,7 +14,9 @@ export const Home = () => {
           </p>
         </div>
         <div className="btns">
+          <Link to="/searching">
             <div className="startbtn">Start Visualizing</div>
+          </Link>
         </div>
         <footer>
           <p>
