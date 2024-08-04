@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
+import { linearSearch } from "../../Algorithm/SearchingAlgorithm/linearSearch";
 import { binarySearch } from "../../Algorithm/SearchingAlgorithm/binarySearch";
 
 function SearchingAlgorithms() {
@@ -30,7 +31,15 @@ function SearchingAlgorithms() {
   const triggerAlgorithm = () => {
     setDisabled(true);
     if (algorithm === "0") {
-      {
+      linearSearch(array, key).then((index: number) => {
+        console.log("runnin");
+        if (index === -1) {
+          fail();
+        } else {
+          success();
+        }
+      });
+    } else {
       binarySearch(array, key, 0, array.length - 1).then((index: number) => {
         console.log("this is running");
         if (index === -1) {
@@ -145,5 +154,5 @@ function SearchingAlgorithms() {
     </div>
   );
 }
-}
+
 export default SearchingAlgorithms;
